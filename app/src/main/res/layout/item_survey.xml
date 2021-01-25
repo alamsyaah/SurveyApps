@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_question"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:backgroundTint="@color/cv_tes_grey"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_idpertanyaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nomor"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_pertanyaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pertanyaan"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RadioGroup
+        android:id="@+id/rg_pertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sangat_memuaskan" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/memuaskan" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cukup" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kurang_memuaskan" />
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buruk" />
+
+        <RadioButton
+            android:id="@+id/rb_6"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sangat_buruk" />
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="4dp">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/rb_1"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/sangat_memuaskan" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="4dp">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/rb_2"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/memuaskan" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="4dp">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/rb_3"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/cukup" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="4dp">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/rb_4"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/kurang_memuaskan" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="4dp">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/rb_5"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/buruk" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_marginBottom="4dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="4dp">-->
+
+        <!--            <RadioButton-->
+        <!--                android:id="@+id/rb_6"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/sangat_buruk" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+    </RadioGroup>
+
+
+</LinearLayout>
